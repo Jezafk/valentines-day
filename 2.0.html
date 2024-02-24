@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te amo</title>
+  <link rel="stylesheet" href="2.0.css">
+</head>
+<body>
+  <div class="container">
+    <div class="rectangulo-inicial" id="rectangulo-inicial">
+    <h1 id="titulo" class="titulo">Will you be my valentine?</h1>
+    <div class="opciones">
+      <button class="opcion" onclick="mostrarFondos('yes')">Yes</button>
+      <button class="opcion" onclick="mostrarFondos('no')">No</button>
+    </div>
+    <div id="contenido" class="oculto">
+      <p id="texto"></p>
+      <div class="rectangulo-siguiente">
+        <button id="siguiente" class="opcion-siguiente" onclick="siguiente()" style="display: none;">Next</button>
+      </div>
+    </div>
+  </div>
+  <script src="2.0.js"></script>
+</body>
+</html>

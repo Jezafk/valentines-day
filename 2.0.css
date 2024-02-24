@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'PressStart2P';
+    src: url('PressStart2P-Regular.ttf') format('truetype'); /* Ruta relativa al archivo de la fuente */
+    /* Otros estilos opcionales como font-weight, font-style, etc. */
+    font-size: 20px;
+  }  
+body {
+    font-family: 'PressStart2P', cursive;
+    text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url('miamorcito0.jpg'); /* Ruta de tu imagen */
+      background-size: cover; /* Para cubrir tsodo el fondo */
+      background-position: center; /* Para centrar la imagen */
+      color: rgb(208, 204, 253);
+      font-size: 20px;
+  }
+  
+  .container {
+    position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(208, 204, 253);
+  font-size: 20px;
+}
+  
+  
+  .rectangulo-inicial {
+    border: 3px solid  rgb(208, 204, 253);
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+    background-color: rgba(104, 68, 138, 0.74);
+  }
+  
+  
+  .rectangulo-siguiente {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    color: rgb(208, 204, 253);
+    font-size: 20px;
+    font-family: 'PressStart2P', cursive;
+    justify-content: center;
+  }
+  .texto {
+    font-size: 10px; /* Cambia el tamaño de la letra según tu preferencia */
+    margin-bottom: 20px;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+  }
+  .opciones {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+  }
+  .opcion {
+    width: 150px;
+    padding: 50px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+  }
+  
+  
+  .opcion {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+    font-size: 20px;
+    border: 2px solid  rgb(208, 204, 253);
+  }
+  
+  .opcion::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid rgb(208, 204, 253);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+    font-size: 20px;
+  }
+  
+  .opcion:hover::before {
+    animation: blink 0.5s infinite alternate;
+    opacity: 1;
+  }
+  
+ .opcion-siguiente {
+  margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+    font-size: 20px;
+    border: 2px solid  rgb(208, 204, 253);
+    justify-content: center;
+}
+
+.opcion-siguiente::before {
+  content: '';
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid rgb(208, 204, 253);
+    transform: translateY(-50%);
+    opacity: 0;
+    font-family: 'PressStart2P', cursive;
+    color: rgb(208, 204, 253);
+    font-size: 20px;
+}
+
+.opcion-siguiente:hover::before {
+  animation: blink 0.5s infinite alternate;
+  opacity: 1;
+}
+  
+  @keyframes blink {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
